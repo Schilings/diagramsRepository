@@ -1,0 +1,449 @@
+/**
+ * 首页的样式
+ */
+/**
+ * 页面通用样式
+ */
+/* 颜色 */
+.primary-color {
+  color: #7CD552;
+}
+.primary-background {
+  background: #7CD552;
+}
+.background-one {
+  background-color: #ffffff;
+}
+.background-two {
+  background-color: #f1f1f1;
+}
+/*  排版布局 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+body {
+  position: relative;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+body h1 {
+  font-size: 36px;
+}
+body h2 {
+  font-size: 30px;
+}
+body h3 {
+  font-size: 24px;
+}
+body h4 {
+  font-size: 18px;
+}
+body h5 {
+  font-size: 16px;
+}
+body h5 {
+  font-size: 14px;
+}
+body a,
+body p,
+body li,
+body input,
+body textarea {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #818181;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+body a {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body a:hover,
+body a:focus,
+body a:active {
+  outline: 0;
+  text-decoration: none;
+  border: 0;
+}
+body img {
+  max-width: 100%;
+}
+body ul {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+/* =================↓ 加载动画 ↓================= */
+.loading-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fefefe;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-div .loading {
+  width: 312px;
+  height: 170px;
+  background: url(../images/loading.gif) no-repeat center;
+  background-size: cover;
+}
+/* =================↓ 导航栏菜单 ↓================= */
+#navbar {
+  background-color: transparent;
+  border: 0 none;
+  border-radius: 0;
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  margin-bottom: 0;
+  z-index: 10;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+}
+#navbar .navbar-brand {
+  padding: 30px 0;
+}
+#navbar .logo {
+  height: 30px;
+}
+#navbar .navbar-nav {
+  float: right;
+  padding: 30px 0;
+}
+#navbar .navbar-nav li a {
+  color: #333333;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 30px !important;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#navbar .navbar-nav li a:hover {
+  background-color: transparent;
+  color: #7CD552;
+}
+#navbar .navbar-nav li a:focus {
+  background-color: transparent;
+}
+#navbar .navbar-nav li.active a {
+  background-color: transparent;
+  color: #7CD552;
+}
+#navbar.minified {
+  background-color: #ffffff;
+  padding: 0;
+  position: fixed;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+/* =================↓ section的样式 ↓================= */
+.section-wrapper {
+  padding: 80px 0;
+  overflow: hidden;
+}
+.section-wrapper .section-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.section-wrapper .section-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #313131;
+}
+.section-wrapper .section-header h1 span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+.section-wrapper .section-header h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #313131;
+}
+.section-wrapper .section-header p {
+  font-family: 'Raleway', sans-serif;
+}
+.section-wrapper .section-header p a {
+  cursor: pointer;
+}
+.section-wrapper .section-header .short-line {
+  width: 100px;
+  height: 1px;
+  margin: 20px auto;
+  background: #7CD552;
+}
+/* =================↓ 轮播图 ↓================= */
+#slider {
+  overflow: hidden;
+  background-color: #28292e;
+}
+#slider .sp-buttons {
+  padding-top: 10px;
+  position: absolute;
+  text-align: center;
+  width: 0;
+  bottom: 20px;
+}
+#slider .sp-buttons .sp-button {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  height: 14px;
+  margin: 4px;
+  width: 14px;
+}
+#slider .sp-arrow {
+  width: 10px;
+  height: 100px !important;
+}
+#slider .main-slides .img-overlay {
+  position: absolute;
+  background-color: rgba(218, 218, 234, 0.42);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#slider .main-slides h1.slider-text-big {
+  font-size: 48px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+#slider .main-slides p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 30px !important;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+/* =================↓ 环保动态 ↓================= */
+#dynamic .dynamic-list .dynamic-item {
+  text-align: center;
+}
+#dynamic .dynamic-list .dynamic-item .dynamic-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 30px;
+  text-align: center;
+  border: 8px solid #dadada;
+  border-radius: 50%;
+  line-height: 0;
+  padding: 8px;
+  -webkit-transition: all 0.35s linear;
+  -moz-transition: all 0.35s linear;
+  -o-transition: all 0.35s linear;
+  transition: all 0.35s linear;
+}
+#dynamic .dynamic-list .dynamic-item .dynamic-icon i {
+  line-height: 70px;
+  font-size: 36px;
+  color: #dadada;
+}
+#dynamic .dynamic-list .dynamic-item .dynamic-icon:hover {
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: #7CD552;
+}
+#dynamic .dynamic-list .dynamic-item .dynamic-icon:hover i {
+  color: #ffffff;
+}
+#dynamic .dynamic-list .dynamic-item h3 {
+  text-align: center;
+  font-size: 18px;
+  color: #616161;
+  margin-top: 0;
+  margin-bottom: 15px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+#dynamic .dynamic-list .dynamic-item h3 a {
+  text-decoration: none;
+  color: #858585;
+  font-weight: bold;
+}
+#dynamic .dynamic-list .dynamic-item h3 a:hover {
+  color: #858585;
+  font-weight: bold;
+}
+/* =================↓ 环保新闻 ↓================= */
+#news .news-list {
+  padding: 0 4%;
+}
+#news .news-list .news-item {
+  margin: 20px 0;
+  text-align: center;
+}
+#news .news-list .news-item .main {
+  height: 290px;
+  margin: 0 10px;
+}
+#news .news-list .news-item .main img {
+  width: 90%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+#news .news-list .news-item .title {
+  margin-top: 12px;
+  font-size: 18px;
+}
+#news .news-list .news-item .title a {
+  text-decoration: none;
+}
+#news .news-list .news-item .from {
+  font-weight: bold;
+}
+/* =================↓ 环保视频 ↓================= */
+#video .video-list {
+  padding: 0 8%;
+}
+#video .video-list .video-item {
+  padding: 0;
+}
+#video .video-list .video-item p {
+  text-align: center;
+  font-size: 18px;
+}
+#video .video-list .video-item iframe {
+  width: 100%;
+  height: 358px;
+}
+#video .video-list .video-item.left .video {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+#video .video-list .video-item.right .video {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+/* =================↓ 环保数据 ↓================= */
+#data .data-list .data-item {
+  padding: 0 35px 15px 35px;
+}
+#data .data-list .data-item .chart {
+  height: 350px;
+}
+#data .data-list .data-item p {
+  text-align: center;
+}
+/* =================↓ 环保小知识 ↓================= */
+#knowledge .knowledge-list .knowledge-item {
+  margin-bottom: 50px;
+  text-align: center;
+}
+#knowledge .knowledge-list .knowledge-item i {
+  font-size: 30px;
+  border-radius: 50%;
+  border: 4px solid #eee;
+  padding: 30px;
+  color: #7CD552;
+}
+#knowledge .knowledge-list .knowledge-item i:hover {
+  color: #fff;
+  background: #7CD552;
+}
+#knowledge .knowledge-list .knowledge-item h3 {
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #7CD552;
+}
+#knowledge .knowledge-list .knowledge-item p {
+  margin-bottom: 0;
+}
+/* =================↓ footer ↓================= */
+footer {
+  background-color: #28292e;
+  padding: 60px;
+  overflow: hidden;
+}
+footer .footer-content {
+  text-align: center;
+}
+footer .footer-content .footer-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+footer .footer-content .footer-logo img {
+  height: 40px;
+}
+footer p {
+  text-align: center;
+  color: #818181;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+footer ul {
+  display: inline-block;
+}
+footer ul li {
+  float: left;
+  margin-right: 15px;
+  border: 2px solid #818181;
+  padding: 8px 10px;
+  border-radius: 50%;
+  width: 50px;
+}
+footer ul li:last-child {
+  margin-right: 0;
+}
+footer ul li a {
+  font-size: 21px;
+}
+footer ul li a i {
+  font-size: 21px;
+  color: #818181;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}

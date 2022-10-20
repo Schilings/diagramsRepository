@@ -1,0 +1,113 @@
+/**
+ * 页面通用样式
+ */
+
+// 主题色
+@colorPrimary: #7CD552;
+
+
+/* 颜色 */
+.primary-color {
+  color: @colorPrimary;
+}
+
+.primary-background {
+  background: @colorPrimary;
+}
+
+.background-one {
+  background-color: #ffffff;
+}
+
+.background-two {
+  background-color: #f1f1f1;
+}
+
+
+/*  排版布局 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+body {
+  position: relative;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  a, p, li, input, textarea {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #818181;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  }
+
+  a {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    outline: 0;
+    text-decoration: none;
+    border: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+  }
+}
+
